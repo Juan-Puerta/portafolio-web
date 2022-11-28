@@ -2,11 +2,13 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import {
   HomeFilled,
-  ContactsFilled,
+  PhoneFilled,
   UserOutlined,
   LinkedinFilled,
   GithubFilled,
   YoutubeFilled,
+  ProfileFilled,
+  FolderFilled,
 } from "@ant-design/icons";
 import Logo from "../../assets/images/logo.png";
 import "./Sidebar.css";
@@ -35,10 +37,26 @@ const Sidebar = () => {
         <NavLink
           exact="true"
           activeclassname="active"
+          className="projects-link"
+          to="/projects"
+        >
+          <FolderFilled />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="resume-link"
+          to="/resume"
+        >
+          <ProfileFilled />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
           className="contact-link"
           to="/contact"
         >
-          <ContactsFilled />
+          <PhoneFilled />
         </NavLink>
       </nav>
       <ul>
