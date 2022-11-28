@@ -1,7 +1,8 @@
 import "./App.css";
+import routing from "./config/routes";
 
-function App() {
-  return <div className="App">¡Hola mundo!</div>;
-}
+const App = () => {
+  return <div>{routing}</div>;
+};
 
 export default App;
