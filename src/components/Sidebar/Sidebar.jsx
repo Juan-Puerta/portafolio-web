@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import {
   HomeFilled,
   PhoneFilled,
-  UserOutlined,
+  IdcardFilled,
   LinkedinFilled,
   GithubFilled,
   YoutubeFilled,
@@ -32,7 +32,7 @@ const Sidebar = () => {
           className="about-link"
           to="/about"
         >
-          <UserOutlined />
+          <IdcardFilled />
         </NavLink>
         <NavLink
           exact="true"
