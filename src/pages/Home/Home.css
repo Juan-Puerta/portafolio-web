@@ -1,0 +1,32 @@
+.home-container{
+    height: 100%;
+    overflow: auto;
+}
+
+.info{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.photo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue
+}
+
+.button-info{
+    width: 200px;
+}
+
+.img-info{
+    max-width: 80%;
+    height: auto;
+}
