@@ -1,19 +1,27 @@
 import React from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import { Link, NavLink } from "react-router-dom";
+import { message } from "antd";
 import {
   HomeFilled,
   PhoneFilled,
   IdcardFilled,
   LinkedinFilled,
   GithubFilled,
-  YoutubeFilled,
   ProfileFilled,
   FolderFilled,
+  MailFilled,
 } from "@ant-design/icons";
 import Logo from "../../assets/images/logo.png";
 import "./Sidebar.css";
 
 const Sidebar = () => {
+  const [messageApi, contextHolder] = message.useMessage();
+
+  const info = () => {
+    messageApi.info("Copied to clipboard");
+  };
+
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
@@ -50,16 +58,23 @@ const Sidebar = () => {
         >
           <ProfileFilled />
         </NavLink>
-        <NavLink
-          exact="true"
-          activeclassname="active"
-          className="contact-link"
-          to="/contact"
-        >
-          <PhoneFilled />
-        </NavLink>
       </nav>
       <ul>
+        <li>
+          {contextHolder}
+          <CopyToClipboard
+            className="copy_nav"
+            text="puertasebastianjuan@gmail.com"
+          >
+            <MailFilled onClick={info} />
+          </CopyToClipboard>
+        </li>
+        <li>
+          {contextHolder}
+          <CopyToClipboard className="copy_nav" text="3146086847">
+            <PhoneFilled onClick={info} />
+          </CopyToClipboard>
+        </li>
         <li>
           <a
             target="_blank"
@@ -76,15 +91,6 @@ const Sidebar = () => {
             href="https://github.com/Juan-Puerta"
           >
             <GithubFilled />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.youtube.com/channel/UCIjlw4ajZnRdsusjHstU6Xw"
-          >
-            <YoutubeFilled />
           </a>
         </li>
       </ul>

@@ -1,8 +1,27 @@
 import React from "react";
-import "./About.css"
+import { Row, Col } from "antd";
+import { Progress } from "antd";
+import ListCard from "../../components/ListCard/ListCard";
+import "./About.css";
 
 const About = () => {
-  return <div>Este es el About</div>;
+  return (
+    <Row className="about-container">
+      <Col className="description" sm={24} md={12}>
+        <ListCard />
+      </Col>
+      <Col className="statics" sm={24} md={12}>
+        <h2>Front-End</h2>
+        <Progress percent={60} strokeColor={"#ffd700"} />
+        <h2>Back-End</h2>
+        <Progress percent={65} strokeColor={"#ffd700"} />
+        <h2>Cloud computing</h2>
+        <Progress percent={30} strokeColor={"#ffd700"} />
+        <h2>Data Science & Machine Learning</h2>
+        <Progress percent={50} strokeColor={"#ffd700"} />
+      </Col>
+    </Row>
+  );
 };
 
 export default About;

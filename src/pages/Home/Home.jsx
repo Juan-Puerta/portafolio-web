@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Row className="home-container">
       <Col className="photo" sm={24} md={12}>
-        <Image className="img-info" src={Foto} />
+        <Image className="img-info" src={Foto} preview={false} />
       </Col>
       <Col className="info" sm={24} md={12}>
         <h1>Hi, I'm Juan Puerta</h1>
