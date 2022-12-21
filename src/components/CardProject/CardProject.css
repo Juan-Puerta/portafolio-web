@@ -1,0 +1,36 @@
+.contenedor-project{
+    max-width: 380px;
+    height: 250px;
+    border-radius: 20px;
+
+    background-image: url(../../assets/images/fondo.webp);
+    background-size: cover;
+    border: 1px solid #ffd700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: 10px;
+
+    transition: all 0.8s ease-out;
+}
+
+.contenedor-project:hover{
+    box-shadow: 0px 0px 10px 4px#ffd700;
+    background-color: #4d4d4e;
+    transition: all 0.8s ease-out;
+    color: white;
+}
+
+.container-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.container-description{
+    padding: 10px;
+}

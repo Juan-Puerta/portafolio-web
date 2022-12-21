@@ -3,6 +3,32 @@ import React from "react";
 const AppContext = React.createContext();
 
 export const AppContextWrapper = (props) => {
+  const info_pro = [
+    {
+      title: "¿Cómo voy?",
+      description: "Web project for students to track their grades",
+      link: "https://github.com/Juan-Puerta/ComoVoy",
+    },
+    {
+      title: "Grafo universitario",
+      description:
+        "Project that helps ICESI University students find the shortest way to get around the campus",
+      link: "https://github.com/Juan-Puerta/ProyectoGrafo",
+    },
+    {
+      title: "Foro",
+      description:
+        "Project for an online forum so that anyone can comment on what they want to say",
+      link: "https://github.com/Juan-Puerta/tarea-foro",
+    },
+    {
+      title: "Metro Cali Simulator",
+      description:
+        "Software that reads the location data of the buses of the MIO transport system and calculates the level of delay of the buses",
+      link: "https://github.com/Juan-Puerta/MetroCaliSimulator",
+    },
+  ];
+
   const info_tec = [
     {
       title: "Front-End",
@@ -26,7 +52,7 @@ export const AppContextWrapper = (props) => {
     },
   ];
 
-  const state = { info_tec };
+  const state = { info_tec, info_pro };
 
   return (
     <AppContext.Provider value={state} displayName="AppContext">

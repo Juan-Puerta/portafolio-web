@@ -1,5 +1,7 @@
 .the-list{
     overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
