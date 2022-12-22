@@ -15,7 +15,7 @@ const CardProject = ({ title, description, link }) => {
         <div className="container-description">
           <div>{description}</div>
           <p />
-          <Button ghost href={link}>
+          <Button className="button-card" ghost href={link}>
             See code
           </Button>
         </div>

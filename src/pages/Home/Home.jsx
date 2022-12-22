@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
 import { Button } from "antd";
-import { Image } from "antd";
 import Foto from "../../assets/images/foto.jpg";
 import "./Home.css";
 
@@ -9,11 +8,18 @@ const Home = () => {
   return (
     <Row className="home-container">
       <Col className="photo" sm={24} md={12}>
-        <Image className="img-info" src={Foto} preview={false} />
+        <div className="caca">
+          <img src={Foto} alt="" />
+        </div>
       </Col>
       <Col className="info" sm={24} md={12}>
-        <h1>Hi, I'm Juan Puerta</h1>
-        <h3>A Software Engineer</h3>
+        <h1 data-text="Hi," style={{ marginBottom: "0px" }}>
+          Hi,
+        </h1>
+        <h1 data-text="I'm_Juan_Puerta">I'm_Juan_Puerta</h1>
+        <h3>
+          <span>A Software Engineer</span>
+        </h3>
         <br />
         <p>
           Software Engineer with interest in working in software development,
@@ -33,9 +39,11 @@ const Home = () => {
           problem solving.
         </p>
         <br />
-        <Button className="button-info" type="primary" size="large">
-          CHECK OUT MY WORK
-        </Button>
+        <div className="div-button">
+          <Button className="button-info" type="default" size="large" ghost>
+            CHECK OUT MY WORK
+          </Button>
+        </div>
       </Col>
     </Row>
   );

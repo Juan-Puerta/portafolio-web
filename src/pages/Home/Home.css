@@ -33,7 +33,125 @@
     width: 200px;
 }
 
-.img-info{
-    max-width: 80%;
-    height: auto;
+.caca{
+    position: relative;
+    border-radius: 10px;
+    width: 70%;
+    display: flex;
+    background-color: #022c43;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.caca::before{
+    content: "";
+    position: absolute;
+    inset: -80px 140px;
+    background:#ffd700;
+    transition: 1.5s;
+    animation: animate 8s linear infinite;
+    z-index: 1;
+}
+
+.caca:hover::before{
+    inset: -500px -500px;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+.caca::after{
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: #022c43;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.caca img{
+    z-index: 2;
+    width: 96%;
+    border-radius: 10px;
+}
+
+h1{
+    padding-bottom: 0px;
+    width: 374px;
+    position: relative;
+    font-size: 44px;
+    color: #022c43;
+    -webkit-text-stroke: 0.08vw #ffd700;
+    text-transform: uppercase;
+}
+
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #ffd700;
+    -webkit-text-stroke: 0vw #fff;
+    border-right: 2px solid #ffd700;
+    overflow: hidden;
+    animation: nose 6s linear infinite;
+}
+
+@keyframes nose{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+h3{
+    width: auto;
+    font-size: 20px;
+    cursor: pointer
+}
+
+h3 span{
+    transition: .5s linear
+}
+
+h3:hover span:nth-child(1){
+    margin-right: 5px
+}
+
+h3:hover span:nth-child(2){
+    margin-left: 30px
+}
+
+h3:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+}
+
+p{
+    text-align: justify;
+}
+
+.div-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant-btn-default.ant-btn-background-ghost:hover{
+    border-color: #ffd700;
+    color: #ffd700;
 }
