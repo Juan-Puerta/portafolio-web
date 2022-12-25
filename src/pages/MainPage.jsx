@@ -9,6 +9,18 @@ const MainPage = () => {
       <Sidebar />
       <div className="body-app">
         <Outlet />
+        <div className="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
   );

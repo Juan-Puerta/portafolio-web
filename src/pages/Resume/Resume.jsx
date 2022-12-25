@@ -8,11 +8,13 @@ const Resume = () => {
   return (
     <div className="div-resume">
       <Button
-        type="primary"
+      className="botoncito"
+        type="default"
         icon={<DownloadOutlined />}
         size="large"
         href={resume}
         download="Resume - Juan Puerta.pdf"
+        ghost
       >
         Download CV
       </Button>

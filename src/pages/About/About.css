@@ -28,3 +28,11 @@
     height: 100%;
     padding: 20px;
 }
+
+.ant-progress .ant-progress-text{
+    color: #f7f2d7;
+}
+
+.clear{
+    height: 40px;
+}

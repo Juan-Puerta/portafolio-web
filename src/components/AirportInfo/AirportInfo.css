@@ -1,0 +1,46 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.table {
+    width: 330px;
+    height: 40px;
+    background-color: #d4e5ff;
+}
+
+.table .monitor-wrapper {
+    background: #050321;
+    width: 320px;
+    height: 30px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.table .monitor-wrapper .monitor {
+    width: 310px;
+    height: 20px;
+    background-color: #344151;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.table .monitor-wrapper .monitor p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    animation: move 8s infinite linear;
+    color: #EBB55F;
+}
+  
+@keyframes move {
+    from {
+      left: 400px;
+    }
+    to {
+      left: -318px;
+    }
+}

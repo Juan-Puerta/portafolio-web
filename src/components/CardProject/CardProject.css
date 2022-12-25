@@ -4,8 +4,10 @@
     border-radius: 20px;
 
     background: #f7f2d7;
-    background-image: url(../../assets/images/fondo.webp);
-    background-size: cover;
+    background-image: url(../../assets/images/fondo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
     border: 1px solid #ffd700;
 
     display: flex;

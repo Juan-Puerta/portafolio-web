@@ -84,9 +84,9 @@
 
 h1{
     padding-bottom: 0px;
-    width: 374px;
+    max-width: 310px;
     position: relative;
-    font-size: 44px;
+    font-size: 36px;
     color: #022c43;
     -webkit-text-stroke: 0.08vw #ffd700;
     text-transform: uppercase;
