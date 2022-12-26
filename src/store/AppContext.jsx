@@ -27,6 +27,18 @@ export const AppContextWrapper = (props) => {
         "Software that reads the location data of the buses of the MIO transport system and calculates the level of delay of the buses",
       link: "https://github.com/Juan-Puerta/MetroCaliSimulator",
     },
+    {
+      title: "Degree project",
+      description:
+        "Creation of an analytics model for the detection of fake news on Colombian politics",
+      link: "https://github.com/Juan-Puerta/proyecto_de_grado",
+    },
+    {
+      title: "List of countries",
+      description:
+        "Web project that displays information on all the countries of the world",
+      link: "https://github.com/Juan-Puerta/lista-paises",
+    },
   ];
 
   const info_tec = [
